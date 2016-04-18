@@ -15,57 +15,59 @@ html
         h1 AATC 2016 Debrief
 
       section
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+        img.profile(src='images/sandi-metz.jpeg')
+        h2 Sandi Metz
+        h3 Practical Agile Development: A Challenge From the Trenches
 
       section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+        img.full-width(src='images/resolution-by-project-size.jpeg')
 
       section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+        h2 Project Aristotle
 
       section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-        ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
+        img.profile(src='images/james-lewis.jpeg')
+        h2 James Lewis
+        h3 Microservices and Conway's Law
 
       section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
-
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+        img.profile(src='images/laurie-williams.jpeg')
+        h2 Laurie Williams
+        h3 After All These Years ... What's Pair Programming Looking Like?
 
       section
-        h2.bullet Just the beginning...
-        br
-        ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+        p
+          img(src='images/pair-programming-illuminated.jpeg', style='height: 400px')
+        p Published in 2002
+
+      section
+        p.bullet Pair Pressure
+        p.bullet Not just for
+
+      section
+        img.profile(src='images/justin-searls.jpeg')
+        h2 Justin Searls
+        h3 How to Stop Hating Your Tests
+
+      section
+        img.full-width(src='images/story-point-ponzi.jpeg')
+
+      section
+        img.profile(src='images/uncle-bob.jpeg')
+        h2 Uncle Bob
+        h3 The Future of Software
+
+      section
+        h3.bullet # of programmers doubles every ~5 years
+        p.bullet
+          img.full-width(src='images/world-population.jpeg')
+        p.bullet (All graphs of doubling every N years look the same)
+
+      section
+        p.bullet If that's true...
+        h2.bullet Half of all programmers have less than 5 years of experience
+
+      section
+        h2 Clean Coders
 
     script(src='build/build.js')
