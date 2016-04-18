@@ -23,12 +23,89 @@ html
         img.full-width(src='images/resolution-by-project-size.jpeg')
 
       section
-        h2 Project Aristotle
+        h2.bullet Google's Project Aristotle
+        div.bullet
+          p
+            img.full-width(src='images/nytimes-google-teams.png')
+          p
+            a(href='http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html').
+              http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html
+
+      section
+        h3.bullet Lots of team-building wisdom
+        p.bullet "It’s better to put introverts together"
+        p.bullet "Teams are more effective when everyone is friends away from work"
+
+      section
+        h3.bullet Google tested it
+        p.bullet "It turned out no one had really studied which of those were true"
+        p.bullet "We looked at 180 teams [...] We had lots of data, but there was nothing showing that a mix of specific personality types or skills or backgrounds made any difference. The ‘who’ part of the equation didn’t seem to matter"
+
+      section
+        h3.bullet What does matter?
+        h2.bullet Group Norms
+
+      section
+        img.full-height(src='images/google-successful-team-dynamics.png')
+
+      section
+        h3.bullet Behaviors that all good teams generally share
+        ol
+          li.bullet Members speak in roughly the same proportion
+            p.bullet (conversational turn taking)
+          li.bullet Team members had high "average social sensitivity"
+            p.bullet a.k.a. skilled at intuiting how others currently feel
+
+      section
+        h3.bullet Applications?
+        p.bullet Retro format
+        p.bullet What else?
 
       section
         img.profile(src='images/james-lewis.jpeg')
         h2 James Lewis
         h3 Microservices and Conway's Law
+
+      section
+        img.full-height(src='images/thoughtworks-microservices.png')
+
+      section
+        p “organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations”
+        p — Melvin Conway (1967)
+
+      section
+        h2.bullet The Idea
+        h3.bullet Coarse-grained communication between teams leads to coarse-grained APIs between teams
+        p.bullet Teams that are under different org structures
+        p.bullet Teams that are physical separate
+        h3.bullet Fine-grained communication between people leads to fine-grained (RPC-style) APIs
+        p.bullet Teams that sit next to each other
+        p.bullet Or a single team that owns many different microservices
+
+      section
+        h3.bullet RPC-style APIs between teams
+        p.bullet Specific API contracts outlining specific request payloads and responses
+        p.bullet Tends to require coordinated releases
+        p.bullet Easy to abuse responsibilities of different services
+        p.bullet Can lead to worst of both worlds... a distributed monolith
+
+      section
+        h3.bullet Switching Gears
+        p.bullet
+          img.full-width(src='images/ebola-team.jpeg')
+
+      section
+        p.bullet Queueing problem when going between teams
+        p.bullet Instead, organize around the "what" of the business
+        p.bullet Not the "how"
+
+      section
+        h3.bullet Examples from Racksburg
+        p.bullet Dave Williams — huge success!
+        ul.bullet Where we run contrary to this advice:
+          li.bullet Separate "DevOps" team
+          li.bullet Separate test automation team
+        p.bullet What else?
 
       section
         img.profile(src='images/laurie-williams.jpeg')
@@ -41,8 +118,29 @@ html
         p Published in 2002
 
       section
-        p.bullet Pair Pressure
-        p.bullet Not just for
+        h2 A Pairing Refresher
+
+      section
+        h2.bullet Why we pair
+        p.bullet On a hard problem, the reward is solving the problem
+        p.bullet On an easy problem, the reward is coming up with better ways of doing things
+
+      section
+        h3 Pair Pressure
+        p
+          img.full-width(src='images/pair-programming.jpeg')
+
+      section
+        h2.bullet Different Styles Of Pairing
+        ol
+          li.bullet
+            h3 Traditional Driver-Navigator
+            p.bullet Driver — types code and is in charge of the details
+            p.bullet Navigator — asks high level questions and watches for mistakes
+          li.bullet
+            h3 Hybrid Pairing
+            p.bullet Driver — in charge of the details and figures out what to do next
+            p.bullet Typer — the only person who's allowed to touch the keyboard
 
       section
         img.profile(src='images/justin-searls.jpeg')
@@ -68,6 +166,12 @@ html
         h2.bullet Half of all programmers have less than 5 years of experience
 
       section
-        h2 Clean Coders
+        p
+          a(href='https://cleancoders.com/') https://cleancoders.com/
+        p
+          img(src='images/clean-code.png')
+
+      section
+        img.full-width(src='images/clean-code-fundamentals.png')
 
     script(src='build/build.js')
