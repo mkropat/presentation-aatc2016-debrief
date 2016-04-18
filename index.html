@@ -17,11 +17,88 @@
       </section>
       <section><img src="images/resolution-by-project-size.jpeg" class="full-width"></section>
       <section>
-        <h2>Project Aristotle</h2>
+        <h2 class="bullet">Google's Project Aristotle</h2>
+        <div class="bullet">
+          <p><img src="images/nytimes-google-teams.png" class="full-width"></p>
+          <p><a href="http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html">
+              http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html
+              </a></p>
+        </div>
+      </section>
+      <section>
+        <h3 class="bullet">Lots of team-building wisdom</h3>
+        <p class="bullet">"It’s better to put introverts together"</p>
+        <p class="bullet">"Teams are more effective when everyone is friends away from work"</p>
+      </section>
+      <section>
+        <h3 class="bullet">Google tested it</h3>
+        <p class="bullet">"It turned out no one had really studied which of those were true"</p>
+        <p class="bullet">"We looked at 180 teams [...] We had lots of data, but there was nothing showing that a mix of specific personality types or skills or backgrounds made any difference. The ‘who’ part of the equation didn’t seem to matter"</p>
+      </section>
+      <section>
+        <h3 class="bullet">What does matter?</h3>
+        <h2 class="bullet">Group Norms</h2>
+      </section>
+      <section><img src="images/google-successful-team-dynamics.png" class="full-height"></section>
+      <section>
+        <h3 class="bullet">Behaviors that all good teams generally share</h3>
+        <ol>
+          <li class="bullet">Members speak in roughly the same proportion
+            <p class="bullet">(conversational turn taking)</p>
+          </li>
+          <li class="bullet">Team members had high "average social sensitivity"
+            <p class="bullet">a.k.a. skilled at intuiting how others currently feel</p>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h3 class="bullet">Applications?</h3>
+        <p class="bullet">Retro format</p>
+        <p class="bullet">What else?</p>
       </section>
       <section><img src="images/james-lewis.jpeg" class="profile">
         <h2>James Lewis</h2>
         <h3>Microservices and Conway's Law</h3>
+      </section>
+      <section><img src="images/thoughtworks-microservices.png" class="full-height"></section>
+      <section>
+        <p>“organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations”</p>
+        <p>— Melvin Conway (1967)</p>
+      </section>
+      <section>
+        <h2 class="bullet">The Idea</h2>
+        <h3 class="bullet">Coarse-grained communication between teams leads to coarse-grained APIs between teams</h3>
+        <p class="bullet">Teams that are under different org structures</p>
+        <p class="bullet">Teams that are physical separate</p>
+        <h3 class="bullet">Fine-grained communication between people leads to fine-grained (RPC-style) APIs</h3>
+        <p class="bullet">Teams that sit next to each other</p>
+        <p class="bullet">Or a single team that owns many different microservices</p>
+      </section>
+      <section>
+        <h3 class="bullet">RPC-style APIs between teams</h3>
+        <p class="bullet">Specific API contracts outlining specific request payloads and responses</p>
+        <p class="bullet">Tends to require coordinated releases</p>
+        <p class="bullet">Fan-in for end-to-end testing</p>
+        <p class="bullet">Easy to abuse responsibilities of different services</p>
+        <p class="bullet">Can lead to worst of both worlds...<br/>a distributed monolith</p>
+      </section>
+      <section>
+        <h3 class="bullet">Switching Gears</h3>
+        <p class="bullet"><img src="images/ebola-team.jpeg" class="full-width"></p>
+      </section>
+      <section>
+        <p class="bullet">Queueing problem when going between teams</p>
+        <p class="bullet">Instead, organize around the "what" of the business</p>
+        <p class="bullet">Not the "how"</p>
+      </section>
+      <section>
+        <h3 class="bullet">Examples from Racksburg</h3>
+        <p class="bullet">Dave Williams — huge success!</p>
+        <ul class="bullet">Where we run contrary to this advice:
+          <li class="bullet">Separate "DevOps" team</li>
+          <li class="bullet">Separate test automation team</li>
+        </ul>
+        <p class="bullet">What else?</p>
       </section>
       <section><img src="images/laurie-williams.jpeg" class="profile">
         <h2>Laurie Williams</h2>
@@ -32,14 +109,44 @@
         <p>Published in 2002</p>
       </section>
       <section>
-        <p class="bullet">Pair Pressure</p>
-        <p class="bullet">Not just for</p>
+        <h2>A Pairing Refresher</h2>
+      </section>
+      <section>
+        <h2 class="bullet">Why we pair</h2>
+        <p class="bullet">On a hard problem, the reward is solving the problem</p>
+        <p class="bullet">On an easy problem, the reward is coming up with better ways of doing things</p>
+      </section>
+      <section>
+        <h3>Pair Pressure</h3>
+        <p><img src="images/pair-programming.jpeg" class="full-width"></p>
+      </section>
+      <section>
+        <h2 class="bullet">Different Styles Of Pairing</h2>
+        <ol>
+          <li class="bullet">
+            <h3>Traditional Driver-Navigator</h3>
+            <p class="bullet">Driver — types code and is in charge of the details</p>
+            <p class="bullet">Navigator — asks high level questions and watches for mistakes</p>
+          </li>
+          <li class="bullet">
+            <h3>Hybrid Pairing</h3>
+            <p class="bullet">Driver — in charge of the details and figures out what to do next</p>
+            <p class="bullet">Typer — the only person who's allowed to touch the keyboard</p>
+          </li>
+        </ol>
       </section>
       <section><img src="images/justin-searls.jpeg" class="profile">
         <h2>Justin Searls</h2>
         <h3>How to Stop Hating Your Tests</h3>
       </section>
-      <section><img src="images/story-point-ponzi.jpeg" class="full-width"></section>
+      <section><img src="images/justin-searls-example-test.jpeg" class="full-width"></section>
+      <section><img src="images/justin-searls-one-weird-trick.jpeg" class="full-width">
+        <p>Full talk is online:<a href="https://www.youtube.com/watch?v=VD51AkG8EZw">https://www.youtube.com/watch?v=VD51AkG8EZw</a></p>
+      </section>
+      <section>
+        <h3>Lightning Talks</h3>
+        <p><img src="images/story-point-ponzi.jpeg" class="full-width"></p>
+      </section>
       <section><img src="images/uncle-bob.jpeg" class="profile">
         <h2>Uncle Bob</h2>
         <h3>The Future of Software</h3>
@@ -54,7 +161,12 @@
         <h2 class="bullet">Half of all programmers have less than 5 years of experience</h2>
       </section>
       <section>
-        <h2>Clean Coders</h2>
+        <p><a href="https://cleancoders.com/">https://cleancoders.com/</a></p>
+        <p><img src="images/clean-code.png"></p>
+      </section>
+      <section><img src="images/clean-code-fundamentals.png" class="full-width"></section>
+      <section>
+        <h3>What are your thoughts?</h3>
       </section>
     </article>
     <script src="build/build.js"></script>
