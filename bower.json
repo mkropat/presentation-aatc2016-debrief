@@ -1,0 +1,7 @@
+{
+  "name": "presentation-aatc-2016-debrief",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}
